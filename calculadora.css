@@ -1,0 +1,73 @@
+.calculadora {
+  width: 400px;
+  background-color: #367e62;
+  padding: 50px 30px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 8px;
+  box-shadow: 0 20px 50px rgb(40, 113, 85, 0.4);
+}
+
+.calculadora .display #name::before {
+  content: "Minha Calculadora";
+  height: 10px;
+}
+
+.nome-calculadora {
+  color: rgb(179, 241, 173);
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.display {
+  width: 100%;
+}
+
+.display input {
+  width: 100%;
+  padding: 15px 10px;
+  text-align: right;
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 35px;
+}
+
+.display input::placeholder {
+  color: #b9b6c8;
+}
+
+.botao {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin-top: 40px;
+}
+
+.botao input[type="button"] {
+  font-size: 20px;
+  padding: 17px;
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#equal {
+  background-color: rgb(146, 35, 35);
+  height: 150px;
+}
+
+input [type="button"] [value="0"] {
+  grid-column: span 2;
+}
+
+body {
+  background-color: #baa8eb;
+}
